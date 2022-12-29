@@ -1,11 +1,14 @@
 import { createApp } from "vue";
 import "./style.css";
 import App from "./App.vue";
-import { Button, ConfigProvider } from "vant";
+import { Button, ConfigProvider, Form, Field, CellGroup } from "vant";
 import "vant/lib/index.css";
 import "./assets/elder.less";
 window.document.documentElement.setAttribute("data-theme", "elder");
 const app = createApp(App);
 app.use(Button);
 app.use(ConfigProvider);
+app.use(Form);
+app.use(Field);
+app.use(CellGroup);
 app.mount("#app");
